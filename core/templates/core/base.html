@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <meta charset="utf-8">
+        <meta name="keywords" content="">
+        <meta name="description" content="Dragon Age: Inquisition website">
+        <meta name="author" content="MScott1607">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>The Inquisition</title>
+            <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+                <link rel="stylesheet" href="{% static '/core/style.css' %}"/>
+                
+                {%block page_head %}
+                
+                {% endblock page_head %}
+    </head>
+
+    <body>
+    <div id="container">
+        <nav class="fullwidth">
+            <ul>
+                <li><a href="{% url 'core_index' %}">Home</a></li>
+                <li><a href="{% url 'core_inquisitor' %}">The Herald</a></li>
+                <li><a href="{% url 'core_directors' %}">Directors</a></li>
+                <li><a href="{% url 'core_aides' %}">Aides</a></li>
+                <li><a href="{% url 'core_about' %}">About</a></li>
+                <li><a href="{% url 'blog_list' %}">Updates</a></li>
+            </ul>
+        </nav>
+    <header class="fullwidth glow"><h1>{% block page_title %}title{% endblock page_title %}</h1></header>
+    
+    {% block page_content %}{% endblock page_content %}
+
+            <footer class="fullwidth">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <ul>
+                        <li><a href="{% url 'core_about' %}">The Inquisition</a></li>
+                        <li><a href="{% url 'core_inquisitor' %}">The Inquisitor</a></li>
+                        <li><a href="{% url 'core_directors' %}">Directors</a></li>
+                        <li><a href="{% url 'core_aides' %}">Aides</a></li>
+                        <li><a href="{% url 'core_work' %}">Our Work</a></li>
+                        <li><p></p></li>
+                        <li><a class="highlightlink" href="{% url 'core_index' %}">home</a></li>
+                    </ul>
+                    
+                </div>
+
+                <div class="footer-section">
+                    <h3>Connections</h3>
+                    <ul>
+                        <li><a href="{% url 'core_careers' %}">Careers</a></li>
+                        <li><a href="{% url 'blog_list' %}">News and Updates</a></li>
+                        <li><a href="{% url 'core_friends' %}">Friends</a></li>
+                        <li><a href="{% url 'core_faqs' %}">FAQs</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">           
+                    <h3>Socials</h3>         
+                    <ul>
+                        <li>images and icons here</li>
+                    </ul>
+                </div>
+
+            </footer>
+    </div> 
+</body>
+</html>

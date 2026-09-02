@@ -1,0 +1,64 @@
+{% extends "core/base.html" %}
+
+{% load static %}
+
+{% block page_title %}The Herald{% endblock page_title %}
+
+{% block page_content %}
+<div id="inquisitor-intro" class="fullwidth intro">
+    <h2>The Herald, The Inquisitor</h2>
+    <p>
+        An introduction to our Herald; the man who will lead us from destruction, who will
+        heal the tear in the Veil and deliver us from the evil that created it.
+    </p>
+</div>
+
+<div id="inquisitor-bio" class="main-text textbox-left">
+    <h3>Inquisitor Lavellan</h3>
+    <p>
+        The Herald is a member of Clan Lavellan, a roaming Dalish clan from the Free Marches and 
+        a gifted warrior. His unique background has given him keen survival skills, and his attendance
+        at The Conclave demonstrates his natural curiosity and desire for knowledge and cooperation
+        between all inhabitants of Thedas that makes him a uniquely qualified leader.
+    </p>
+    <p>
+        As the sole witness to events of the Conclave, and sole survivor of the explosion that 
+        destroyed The Temple of Sacred Ashes, The Herald also emerged from the Fade with the
+        unique ability to heal tears in the Veil.
+    </p>
+
+</div>
+
+<div id="inquisitor-image" class="main-image img-right">
+    <img src="{% static '/core/card_lavellan.png' %}">
+</div>
+
+<div id="inquisitor-image" class="main-image img-left">
+    <img src="{% static '/core/card_warrior.png' %}">
+</div>
+
+<div id="inquisitor-why" class="main-text textbox-right">
+    <h3>How did he get here?</h3>
+    <p> 
+        The Herald attended the Conclave as a representative of the Dalish clans, knowing 
+        the outcome would affect everything and everyone in Thedas. 
+    </p>
+    <p>
+        During the Conclave, a force of evil beyond our reckoning annihilated the Temple of 
+        Sacred Ashes. We do not yet know his reasons, but we do know that everyone except The
+        Herald was killed - including Divine Justinia V, who was sacrificed to a blood magic
+        ritual to open The Fade.
+    </p>
+    <p>
+        Having witnessed the brutal sacrifice of Divine Justinia V, The Herald was thrust into 
+        The Fade by powerful magic. On awakening, he was threatened by giant spider-like creatures
+        but survived when he was guided out to safety by a female spirit. 
+    </p>
+    <p>
+        He collapsed on emergence from The Fade, but awoke with a new power - a power to heal
+        tears in the Veil.
+    </p>
+</div>
+
+
+{% endblock page_content %}

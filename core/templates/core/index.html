@@ -1,0 +1,87 @@
+{% extends "core/base.html" %}
+{% load static %}
+
+                {%block page_head %}
+                <script defer src="{% static '/core/carousel.js' %}"/></script>
+                {% endblock page_head %}
+                {% block page_title %}The Inquisition{% endblock page_title %}
+{% block page_content %}
+        
+        
+            
+            <div id="inquisitor-text" class="main-text textbox-left">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Sint, a sequi! Id necessitatibus asperiores corporis porro voluptatibus harum reiciendis aliquam, 
+                sunt repellat itaque nam pariatur, error exercitationem a, consectetur mollitia.</p>
+            </div>
+            <div id="inquisitor-pic" class=" main-image img-right">
+                <img src="{% static 'core/images/card_lavellan.png' %}"/>
+            </div>
+
+            <div id ="advisor-images" class=" main-image altrow img-left">
+                <a class="advisor-link" href="{% static 'core/directors.html'}">
+                    <img class="advisorslides fadein" src="{% static 'core/images/advisor_cassandra.png' %}">
+                </a>
+                <a class="advisor-link" href="{% static 'core/directors.html'}">
+                    <img class="advisorslides fadein" src="{% static 'core/images/advisor_cullen.png' %}">
+                </a>
+                <a class="advisor-link" href="{% static 'core/directors.html'}">
+                    <img class="advisorslides fadein" src="{% static 'core/images/advisor_leliana.png' %}">
+                </a>
+                <a class="advisor-link" href="{% static 'core/directors.html'}">
+                    <img class="advisorslides fadein" src="{% static 'core/images/advisor_josephine.png' %}">
+                </a>
+            </div>
+
+            <div id="advisor-text" class="main-text textbox-right altrow">
+                <p>Lorem, ipsum. Lorem ipsum <a href="">dolor</a> sit amet, consectetur adipisicing elit. 
+                Laboriosam eveniet quia reiciendis minima adipisci, quisquam accusantium commodi deserunt mollitia? 
+                Voluptatem ratione ipsa commodi animi optio aliquid, odio veniam quos culpa!</p>
+            </div>
+
+<!-- single column images with links and optional text-->
+            <div id="our-work" class="singlecol">
+                <div class="nested-section image">
+                    <a href="{% url 'core_work' %}"> 
+                        <img src="{% static 'core/images/quills.png' %}" class="minor-image boxglow">
+                    </a>
+                </div>
+                <div class="nested-section text">
+                <a href="{% url 'core_work' %}">
+                    <button class="singlecolbutton boxglow">our work</button></a>
+                    <p>
+                        Discover what we do, and how we do it.
+                    </p>
+                </div>
+            </div>
+            
+            <div id="our-values" class="singlecol">
+                <div class="nested-section image">
+                    <a href="{% url 'core_values' %}">
+                        <img src="{% static 'core/images/ferelden.png' %}" class="minor-image boxglow">
+                    </a>
+                </div>
+                <div class="nested-section text">
+                    <a href="{% url 'core_values' %}">
+                        <button class="singlecolbutton boxglow">our values</button></a>
+                    <p>
+                        Learn why we do what we do.
+                    </p>
+                </div>
+            </div>
+            
+            <div id="our-friends" class="singlecol">
+                <div class="nested-section image">
+                    <a href="{% url 'core_friends' %}">
+                        <img src="{% static 'core/images/halla.png' %}" class="minor-image boxglow">
+                    </a>
+                </div>
+                <div class="nested-section text">
+                    <a href="{% url 'core_friends' %}">
+                        <button class="singlecolbutton boxglow">our friends</button></a>
+                        <p>
+                            Who we work with to achieve our goals.
+                        </p>
+                </div>
+            </div>
+{% endblock page_content %}

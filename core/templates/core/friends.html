@@ -1,0 +1,70 @@
+{% extends "core/base.html" %}
+{% load static %}
+{% block page_title %}title{% endblock page_title %}
+{% block page_content %}
+
+<div id="allies-intro" class="fullwidth intro">
+    <h2>Our Friends</h2>
+    <p> 
+    </p>
+</div>
+
+<div id="friends-dalish" class="singlecol altrow">
+    <div class="nested-section">
+        <img src="{%static 'core/images/a_dalish.png'%}" class=" minor-image" alt="The Dalish symbol, an eye mask of leaves">
+    </div>
+    <div class="nested-section text">
+        Led by a member of Clan Lavellan, the Inquisition has worked with the 
+        Dalish to purge Venatori threats across the Dales and has several Dalish recruits.
+        
+    </div>
+</div>
+<div id="friends-starkhaven" class="singlecol altrow">
+    <div class="nested-section">
+        <img src="{%static 'core/images/a_starkhaven.png'%}" class=" minor-image" alt="Starkhaven symbol; several wolves dancing around a chalice">
+    </div>
+    <div class="nested-section text">
+        We are collaborating with the prosperous cities in the Free Marches to facilitate
+        trade and quell the threats that visit our world.
+    </div>
+</div>
+<div id="friends-legion" class="singlecol altrow">
+    <div class="nested-section">
+        <img src="{%static 'core/images/a_legion.png'%}" class=" minor-image" alt="The Legion of the Dead:
+                    An arm wearing a heavy armour gauntlet against a white rook chess piece.">
+    </div>
+    <div class="nested-section text">
+        The Breach threatens all, and with Corypheus unleashing further darkspawn upon the world,
+        The great city of Orzammar has declared support, lending us several warriors from the 
+        famed Legion of the Dead. Fearless, powerful darkspawn hunters.
+    </div>
+</div>
+
+<div id="friends-orlais" class="singlecol ">
+    <div class="nested-section">
+        <img src="{%static 'core/images/a_orlais.png'%}" class=" minor-image" alt="Orlais: a red background with a golden full face mask in front">
+    </div>
+    <div class="nested-section text">
+        The Empress of Orlais recognises the threat to our world, and has pledged
+        military as well as financial aid. 
+    </div>
+</div>
+<div id="friends-wardens" class="singlecol ">
+    <div class="nested-section">
+        <img src="{%static 'core/images/a_wardens.png'%}" class=" minor-image" alt="The Grey Wardens: A white griffin on a blue background">
+    </div>
+    <div class="nested-section text">
+        The Grey Wardens have pledged their finest to our cause. They have already eliminated local
+        darkspawn hoardes, protecting countless civilians.
+    </div>
+</div>
+<div id="friends-mages" class="singlecol ">
+    <div class="nested-section">
+        <img src="{%static 'core/images/a_mages.png'%}" class=" minor-image" alt="Mages: Several stylised suns and stars against four coloured backgrounds ">
+    </div>
+    <div class="nested-section text">
+        The mage rebellion has been quelled and the remaining mages have pledged service to the Inquisition. 
+        Their power has already been used to stabilise the Breach at Haven, and heal many wounded civilians and soldiers.
+    </div>
+</div>
+{% endblock page_content %}

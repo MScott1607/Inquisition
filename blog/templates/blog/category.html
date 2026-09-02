@@ -1,0 +1,10 @@
+{% extends "blog/index.html" %}
+
+{% block page_title %}
+<h2>{{ category }}</h2>
+<p>TAGS:
+            <p>{% for tag in tags %}
+                <a href="{% url 'blog_tags' tag.name %}">
+                    <button>{{ tag }}</button></a>{%endfor%}
+</p>
+{% endblock page_title %}
