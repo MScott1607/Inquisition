@@ -7,6 +7,25 @@
 <section class="faqs fullwidth">
     <div class="faq-container">
 
+        <article class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+                <h3>Who are you? What do you do?</h3>
+            <span class="faq-icon" aria-hidden="true">+</span>
+            </button>
+            <div class="faq-answer">
+                <p>To put it concisely, we were somewhat of a back-up plan 
+                    by Divine Justinia V in case of a calamity within the Chantry, or 
+                    in case her attempts to broker a mage-templar peace failed. We were officially 
+                    formed before the disaster at the Conclave, but through these events we 
+                    gained prominence due to the appearance of <a href="{% url 'core_inquisitor' %}">The Herald</a>. 
+                    Now, we focus on maintaining the peace, closing rifts, aiding civilians and refugees 
+                    and - of course - defeating Corypheus and the Venatori. If you would like a more 
+                    in-depth look at our history and purpose, please visit our 
+                    <a href="{% url 'core_about' %}">About</a> page.
+                </p>
+            </div>
+        </article>
+
 
         <article class="faq-item">
             <button class="faq-question" aria-expanded="false">
@@ -27,22 +46,38 @@
 
         <article class="faq-item">
             <button class="faq-question" aria-expanded="false">
-                <h3>I can't fight, I know nothing about healing, can I help somehow?</h3>
+                <h3>Who is "The Elder One"? Or Corypheus?</h3>
             <span class="faq-icon" aria-hidden="true">+</span>
             </button>
             <div class="faq-answer">
-                <p>do this to answer this question blabalblablalab</p>
+                <p>The Elder One is a Darkspawn, claiming to be an ancient
+                    Tevinter Magister and calls himself 'Corypheus'. You may see
+                    him referred to as both names here. He claims to have been succesful 
+                    in entering the Fade and plans to restore Tevinter to - what he describes as - "its 
+                    former glory". This is why he has allied so closely with the Venatori.
+                </p>
+                <p>Similar to an Archdemon, he is able to control Darkspawn through the Taint, and the 
+                    Taint is spread rapidly via Red Lyrium - lyrium that has been corrupted with the Taint.
+                </p>
             </div>
         </article>
 
 
         <article class="faq-item">
             <button class="faq-question" aria-expanded="false">
-                <h3>I can't fight, I know nothing about healing, can I help somehow?</h3>
+                <h3>Why doesn't the Chantry fully support you?</h3>
             <span class="faq-icon" aria-hidden="true">+</span>
             </button>
             <div class="faq-answer">
-                <p>do this to answer this question blabalblablalab</p>
+                <p>We have several prominent Chantry clerics within our ranks, as 
+                    well as the closest aides to Divine Justinia leading us. Despite the 
+                    Inquisition having been begun again by Divine Justinia herself, many 
+                    within the Chantry have chosen to denounce the Inquisition and the Herald. 
+                    They call us heretics. It is currently not our position to be concerned 
+                    with this; whilst we would of course ideally have the full backing of the Chantry, 
+                    this is difficult without a Divine in place. We feel it is more important to focus
+                    on the immediate threat to our world, rather than in-fighting between clergy.
+                </p>
             </div>
         </article>
 
@@ -50,67 +85,104 @@
 
         <article class="faq-item">
             <button class="faq-question" aria-expanded="false">
-                <h3>Question 1</h3>
+                <h3>Who are the Venatori?</h3>
             <span class="faq-icon" aria-hidden="true">+</span>
             </button>
             <div class="faq-answer">
-                <p>do this to answer this question blabalblablalab</p>
+                <p>The Venatori are an extremist cult of Tevinter supremacists. They 
+                    sow chaos throughout Thedas for their master, The Elder One, as 
+                    they believe he will restore Tevinter to glory. They claim to be protectors 
+                    of Tevinter, despite not being officially sanctioned by anyone in Tevinter. 
+                    However, some Magisters <i>are</i> part of the Venatori cult. Such is their 
+                    desire for Tevinter's supreme rule, they have deceived the Grey Wardens into in-fighting, 
+                    plotted an assassination of Empress Celene, attacked refugees throughout the Dales, 
+                    and allied with the Red Templars.
+                </p>
             </div>
         </article>
 
 
         <article class="faq-item">
             <button class="faq-question" aria-expanded="false">
-                <h3>Question 1</h3>
+                <h3>What is Red Lyrium?</h3>
             <span class="faq-icon" aria-hidden="true">+</span>
             </button>
             <div class="faq-answer">
-                <p>do this to answer this question blabalblablalab</p>
+                <p>Typically found in crystalline form, just as normal lyrium. Whilst the 
+                    familiar blue lyrium is mined by Dwarves, Red Lyrium has been able to 
+                    spread across Thedas - both above and below ground. It has never been
+                    encountered by the Mining caste before, so we can assume it is linked with 
+                    Corypheus himself.
+                </p>
+                <p>It thins the Veil, which allows demons to penetrate the physical realm; it is for this 
+                    reason that there have been so many demon attacks recently. Unlike normal lyrium,
+                    it does not need mining or refining before ingestion. It has been discovered 
+                    that Red Lyrium is normal lyrium, tainted by the Blight.
+                </p>
+                <p>It is extremely dangerous; please do not touch it, and avoid going too near. If you 
+                    are able, please report the location to your nearest Inquisition outpost.
+                </p>
             </div>
         </article>
 
         <article class="faq-item">
             <button class="faq-question" aria-expanded="false">
-                <h3>Question 1</h3>
+                <h3>What is a Red Templar?</h3>
             <span class="faq-icon" aria-hidden="true">+</span>
             </button>
             <div class="faq-answer">
-                <p>do this to answer this question blabalblablalab</p>
+                <p>Red Templars are former Templars who have succumbed to Corypheus' manipulations.
+                    Some were floundering Templars, rallied by a former Templar named Samson during the
+                    mage-templar war. Others were following orders and their duty, but 
+                    unknowingly pulled into this new life under Seeker Lucius - a man 
+                    who had abandoned his duties in service to Corypheus, and gave himself up to demonic possession.</p>
+                <p>Both factions use ingested Red Lyrium to enhance their abilities, although they were not told 
+                    of the monstrous side effects this would have on them. Some Templars appear to be 
+                    more affected than others, although the deforming of their bodies appears consistent.
+                    Few retain their humanity, and we do not fully understand why. What we do 
+                    assume to be true, is that through the taint in the red lyrium, Corypheus is 
+                    able to control them more and more the further they are corrupted with its use.
+                </p>
+                </p>
             </div>
         </article>
 
 
         <article class="faq-item">
             <button class="faq-question" aria-expanded="false">
-                <h3>Question 1</h3>
+                <h3>Why do you have a Tevinter working for you?</h3>
             <span class="faq-icon" aria-hidden="true">+</span>
             </button>
             <div class="faq-answer">
-                <p>do this to answer this question blabalblablalab</p>
+                <p>Despite being the son of a Magister, Dorian Pavus is estranged from his family
+                    and ostracised by most of Tevinter for opposing almost everything they consider 
+                    their greatest strengths and sources of pride. 
+                </p>
+                <p>In fact, the initial meeting with Dorian Pavus involved him saving the Herald's life - at
+                    great risk to his own. We understand there will be a lack of trust in him amongst our 
+                    followers and recruits, but we ask that people trust our judgement and do not cause 
+                    any trouble for The Herald for the decision to keep him in our service. We assure you,
+                    all background checks have been carried out and verified multiple times by multiple 
+                    Inquisition staff, and he is being monitored closely.
+                </p>
             </div>
         </article>
 
 
         <article class="faq-item">
             <button class="faq-question" aria-expanded="false">
-                <h3>Question 1</h3>
+                <h3>Is it safe to have a Qunari with The Herald?</h3>
             <span class="faq-icon" aria-hidden="true">+</span>
             </button>
             <div class="faq-answer">
-                <p>do this to answer this question blabalblablalab</p>
+                <p>The Iron Bull has been completely open with The Herald since 
+                    the day they met, and The Chargers are a renowned mercenary company. 
+                    The Qunari are practical above all else, and recognise the threat that 
+                    Corypheus and The Breach hold to everyone. The Iron Bull is no different.
+                </p>
             </div>
         </article>
 
-
-        <article class="faq-item">
-            <button class="faq-question" aria-expanded="false">
-                <h3>Question 1</h3>
-            <span class="faq-icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-answer">
-                <p>do this to answer this question blabalblablalab</p>
-            </div>
-        </article>
 
 
     </div>
