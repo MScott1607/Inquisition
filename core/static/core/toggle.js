@@ -1,15 +1,3 @@
-// const toggles = document.querySelectorAll(".faq-toggle");
-
-// toggles.forEach((toggle) => {
-//     toggle.addEventListener("click", () => {
-//         // Targets the .faq container directly and reliably
-//         const faqItem = toggle.closest(".faq");
-//         if (faqItem) {
-//             faqItem.classList.toggle("active");
-//         }
-//     });
-// });
-
 document.addEventListener('DOMContentLoaded', () => {
     const faqButtons = document.querySelectorAll('.faq-question');
 

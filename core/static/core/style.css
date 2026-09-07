@@ -428,8 +428,11 @@ section{
     grid-template-rows:1fr;
     /* display:grid; */
 }
-.faq-answer > *{
+/* .faq-answer > *{
     overflow:hidden;
+} */
+.faq-answer-inner {
+    overflow: hidden;
 }
 .faq-answer p{
     margin:0px;
